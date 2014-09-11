@@ -256,7 +256,8 @@ void main()
 	if (rand()<0.04)
 	{
 		float x = max(0., sin(time*rand()*rand()*0.572)-0.97)/0.03;
-		gl_PointSize += 40*x*amount*100;
+		gl_PointSize += 0.5*x*amount*100;
+		//gl_PointSize = 0;
 	}
 }
 
